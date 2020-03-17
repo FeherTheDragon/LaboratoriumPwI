@@ -1,0 +1,66 @@
+html, body{
+    margin:0;
+}
+
+nav ul{                         /* selektory potomka (dzialaja dla id(#) i class (.) */
+    margin:0;                   /* margines zewnetrzny */
+    padding:0;                  /* margines wewnetrzny */
+    list-style-type: none;      /* usuwanie kropek */
+}
+
+nav li{
+    display:inline-block;
+    width:33%;
+    text-align:center;
+}
+
+li:hover{
+    background-color:grey;
+}
+
+a{
+    color:black;
+}
+
+a:hover{
+    color:white;
+}
+
+h1{
+    text-align:center;
+    font-size:15px;
+    margin:0;
+    padding:0;
+}
+
+section{
+    background-color:#CCCCEE;
+}
+
+#naglowek{
+    background-color:#9999FF;
+}
+
+nav{
+    background-color:#AAAAFF;
+}
+
+*.panelGlowny{
+    background-color:#BBBBFF;
+    width:66.66%;
+    height:auto;
+}
+
+.panelBoczny{
+    background-color:#CCCCFF;
+    width:33.33%;
+    height:auto;
+}
+
+footer{
+    background-color:#DDDDFF;
+}
+
+.noweTlo{
+        background-color:cyan;
+}
