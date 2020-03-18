@@ -15,21 +15,25 @@
 </head>
 <body>
     
-    <header id="naglowek" class="row">
-        <h1 class="col">Fantastyczna Stronka</h1>
-    </header>
-    
-    <nav class="row">
-        <ul class="col">
-            <a href="03.html"><li>Zajecia 3</li></a>
-            <a href="04.html"><li>Zajecia 4</li></a>
-            <a href="05.html"><li>Zajecia 5</li></a>
-        </ul>
-    </nav>
-    
-    <main class="row m-0 p-0">
-        <article class="panelGlowny col-8">
-            <div class="row">
+    <div class="container-fluid">
+        <header id="naglowek" class="row">
+            <div class="col-12">
+                <h1>Fantastyczna Stronka</h1>
+            </div>
+        </header>
+
+        <nav class="row">
+            <div class="col-12">
+                <ul>
+                    <a href="03.html"><li>Zajecia 3</li></a>
+                    <a href="04.html"><li>Zajecia 4</li></a>
+                    <a href="05.html"><li>Zajecia 5</li></a>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="row">
+            <article class="panelGlowny col-8">
                 <div id="carouselExampleControls" class="carousel slide col-6" data-ride="carousel">
                   <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -51,50 +55,52 @@
                     <span class="sr-only">Next</span>
                   </a>
                 </div>
-            </div>
-            <section>
-                Section
-            </section>
-        </article>
-        
-        <aside class="panelBoczny col-4">
-            <div class="accordion" id="accordionExample">
-              <div class="card bg-primary text-white">
-                <div class="card-header" id="headingOne">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      Lorem Ipsum
-                    </button>
-                  </h2>
-                </div>
+                <section>
+                    Section
+                </section>
+            </article>
 
-                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                  <div class="card-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <aside class="panelBoczny col-4">
+                <div class="accordion" id="accordionExample">
+                  <div class="card bg-primary text-white">
+                    <div class="card-header" id="headingOne">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Lorem Ipsum
+                        </button>
+                      </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card bg-secondary text-white">
+                    <div class="card-header" id="headingTwo">
+                      <h2 class="mb-0">
+                        <button class="btn btn-link collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Dolor Sit Amet
+                        </button>
+                      </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                      <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="card bg-secondary text-white">
-                <div class="card-header" id="headingTwo">
-                  <h2 class="mb-0">
-                    <button class="btn btn-link collapsed text-white" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Dolor Sit Amet
-                    </button>
-                  </h2>
-                </div>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                  <div class="card-body">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </div>
-                </div>
-              </div>
+            </aside>
+        </main>
+
+        <footer class="row">
+            <div class="col-12">
+                <p>Stopka</p>
             </div>
-        </aside>
-    </main>
-    
-    <footer class="row">
-        <p class="col">Stopka</p>
-    </footer>
+        </footer>
+    </div>
     
     
 </body>
