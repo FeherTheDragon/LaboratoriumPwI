@@ -65,14 +65,13 @@ footer{
 
 main{
     display:flex;
-    justify-content: flex-start;
-    align-items: stretch;
+    height:200px;
 }
 
 main > article{
-    order:1;
+    flex:2;
 }
 
 main > aside{
-    order:2;
+    flex:1;
 }
