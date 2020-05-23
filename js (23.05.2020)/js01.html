@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    
+    <title>js01</title>
+    <meta charset="utf-8">
+    
+</head>
+<body onload="load();">
+    
+    <label>a:</label>
+    <input type="number" id="a">
+    <br>
+    <label>b:</label>
+    <input type="number" id="b">
+    <br>
+    <input type="button" value="Oblicz" id="oblicz">
+    <div id="suma"></div>
+    <div id="roznica"></div>
+    <div id="iloczyn"></div>
+    <div id="iloraz"></div>
+    
+    <script>
+        function load() { 
+             var oblicz = document.getElementById("oblicz"); 
+             oblicz.addEventListener("click", policz, false); 
+        }
+        
+        function policz() {
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+            
+            var suma = a + b;
+            document.getElementById("suma").innerHTML = "Suma: " + suma;
+            var roznica = a - b;
+            document.getElementById("roznica").innerHTML = "Różnica: " + roznica;
+            var iloczyn = a * b;
+            document.getElementById("iloczyn").innerHTML = "Iloczyn: " + iloczyn;
+            if(b == 0) document.getElementById("iloraz").innerHTML = "Nie dziel przez 0!";
+            else{
+                var iloraz = a / b;
+                document.getElementById("iloraz").innerHTML = "Iloraz: " + iloraz;
+            }
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    
+    <title>js04</title>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    
+</head>
+<body>
+    
+    <div id="komunikat">To jest tekst!</div>
+    <a href="#" id="schowaj">Schowaj</a>
+    <a href="#" id="pokaz">Pokaż</a>
+    
+    <script>
+        $("#schowaj").click(function(){
+            $("#komunikat").slideUp("slow");
+        });
+        
+        $("#pokaz").click(function(){
+            $("#komunikat").slideDown("slow");
+        });
+    </script>
+    
+</body>
+</html>
